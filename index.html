@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>comigo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="assets/other/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <!------------------------------------ header section ---------------------------------------->
     <header>
       <h1>comigo</h1> <!--TODO - hide with css-->
       <a href="index.html">
@@ -12,7 +15,7 @@
       </a>
       <nav>
         <ul>
-          <li>
+          <li class="selected">
             <a href="#">Home</a>
           </li>
           <li>
@@ -36,7 +39,8 @@
                     <a href="http://www.comigo.com/our-solutions/ei-middleware/android/">Android</a>
                   </li>
                   <li>
-                    <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/">Comigo WhatchApp™ Applications</a>
+                    <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/">Comigo WhatchApp™
+                      Applications</a>
                   </li>
                 </ul>
               </li>
@@ -71,18 +75,22 @@
         </ul>
       </nav>
     </header>
+    <!---------------------------------------- main section -------------------------------------------->
     <main>
+      <!-------------------------------------- first section ------------------------------------------->
       <section>
         <h1>Make your OTT shine with the Experience Intelligence Cloud</h1>
-        <a href="#window-form">schedule a demo</a>
+        <a href="#window-form" class="red_btn">schedule a demo</a>
       </section>
+      <!-------------------------------------- why comigo ---------------------------------------------->
       <section>
         <h2>Why Comigo?</h2>
         <p>
           Creating a TV that understands, with automatic metadata enrichment and Artificial Intelligence (AI)
         </p>
-        <a href="http://www.comigo.com/our-solutions/ei-cloud/">Learn More</a>
+        <a href="http://www.comigo.com/our-solutions/ei-cloud/" class="red_btn">Learn More</a>
       </section>
+      <!---------------------------------------- contextual services ------------------------------------>
       <section>
         <h3>
           Engage viewers,differentiate experience and drive new revenue
@@ -147,46 +155,50 @@
           </li>
         </ul>
       </section>
+      <!------------------------------------------ services/solutions --------------------------------------->
       <section>
         <div>
           <h3>Enhance any tv service</h3>
           <p>Comigo Experience Intelligence (EI)</p>
-          <a href="http://www.comigo.com/our-solutions">Enhance your OTT TV</a>
+          <a href="http://www.comigo.com/our-solutions" class="red_btn">Enhance your OTT TV</a>
         </div>
         <div>
           <h3>Deploy best in class tv service</h3>
           <P>Comigo's Android-based STB (HW&MW)</P>
-          <a href="http://www.comigo.com/our-solutions/ei-middleware/">Deploy on Android</a>
+          <a href="http://www.comigo.com/our-solutions/ei-middleware/" class="red_btn white_btn">Deploy on Android</a>
         </div>
       </section>
+      <!------------------------------------------- whos on ------------------------------------------------->
       <section>
         <h3>Your Content, Comigo's Unique Experience</h3>
         <p>
           Intelligence-based contextual WatchApp Applications
         </p>
-        <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/">Learn More</a>
+        <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/" class="red_btn">Learn More</a>
         <img src="assets/other/screen_whos_on.jpg" alt="whos_on">
       </section>
-      <section>
-          <h3>Learn more about Comigo</h3>
-          <a href="assets/other/lnr-download.svg" download="download.svg">
-            Download the Whitepaper to learn more
-          </a>
-          <a href="#window-form">
-            <h3>Schedule a Demo</h3>
-            <img src="assets/other/screen_demo.jpg" alt="demo">
-          </a>
-          <a href="https://www.facebook.com/Comigo-278941765529151" target="_blank"
-             title="Visit us on facebook"></a>
-          <a href="https://twitter.com/Comigo_Ltd" target="_blank" title="Visit us on twitter"></a>
-          <a href="https://www.linkedin.com/company/2523681" target="_blank"
-             title="Visit us on LinkdIn"></a>
-          <a href="https://www.youtube.com/user/ComigoLtd" target="_blank"
-             title="Visit us on Youtube"></a>
-          <a href="http://www.comigo.com/industry-events/#window-form">
-            <img src="assets/other/comigo-schedule-meeting.png" alt="schedule meeting">
-          </a>
+      <!-------------------------------------------- learn more --------------------------------------------->
+      <section id="learn">
+        <h3 class="texta">Learn more about Comigo</h3>
+        <a href="assets/other/lnr-download.svg" download="download.svg" id="learn_more_download">
+          Download the Whitepaper to learn more
+        </a>
+        <a href="#window-form">
+          <h3 class="texta">Schedule a Demo</h3>
+          <img src="assets/other/screen_demo.jpg" alt="demo">
+        </a>
+        <a href="https://www.facebook.com/Comigo-278941765529151" target="_blank"
+           title="Visit us on facebook"></a>
+        <a href="https://twitter.com/Comigo_Ltd" target="_blank" title="Visit us on twitter"></a>
+        <a href="https://www.linkedin.com/company/2523681" target="_blank"
+           title="Visit us on LinkdIn"></a>
+        <a href="https://www.youtube.com/user/ComigoLtd" target="_blank"
+           title="Visit us on Youtube"></a>
+        <a href="http://www.comigo.com/industry-events/#window-form">
+          <img src="assets/other/comigo-schedule-meeting.png" alt="schedule meeting">
+        </a>
       </section>
+      <!---------------------------------------------- blog ------------------------------------------------->
       <aside>
         <header>
           <h3>Our Blog</h3>
@@ -208,7 +220,8 @@
             </a>
           </li>
           <li>
-            <a href="http://www.comigo.com/blog/big-data-meets-tv-the-next-phase-in-the-evolution-of-the-tv-experience/">
+            <a
+              href="http://www.comigo.com/blog/big-data-meets-tv-the-next-phase-in-the-evolution-of-the-tv-experience/">
               <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV Connect 2016</p>
               <div>Read More</div>
             </a>
@@ -228,17 +241,16 @@
         </ul>
       </aside>
     </main>
+    <!------------------------------------------------- footer ------------------------------------------------>
     <footer>
-      <div>
+      <div id="footer_main">
         <ul>
+          <li class>
+            <a href="#">Home</a>
+          </li>
           <li>
+            <a href="http://www.comigo.com/our-solutions/">Our solutions</a>
             <ul>
-              <li>
-                <a href="http://www.comigo.com/">Home</a>
-              </li>
-              <li>
-                <a href="http://www.comigo.com/our-solutions/">Our solutions</a>
-              </li>
               <li>
                 <a href="http://www.comigo.com/our-solutions/ei-cloud/">EI Cloud</a>
               </li>
@@ -251,13 +263,11 @@
             </ul>
           </li>
           <li>
+            <a href="http://www.comigo.com/partners/">Partners</a>
+          </li>
+          <li>
+            <a href="#">Industry Insights</a>
             <ul>
-              <li>
-                <a href="http://www.comigo.com/partners/">Partners</a>
-              </li>
-              <li>
-                <a href="#">Industry Insights</a>
-              </li>
               <li>
                 <a href="http://www.comigo.com/media-room/">Media Room</a>
               </li>
@@ -270,24 +280,23 @@
             </ul>
           </li>
           <li>
-            <ul>
-              <li>
-                <a href="http://www.comigo.com/about-us/">About</a>
-              </li>
-              <li>
-                <a href="http://www.comigo.com/contact-us/">Contact</a>
-              </li>
-            </ul>
+            <a href="http://www.comigo.com/about-us/">About</a>
+          </li>
+          <li>
+            <a href="http://www.comigo.com/contact-us/">Contact</a>
           </li>
         </ul>
         <img src="assets/logo/comigo-logo-white.png" alt="logo">
       </div>
-      <div>
+      <div id="footer_secondary">
         <span>All rights reserved Comigo 2016</span>
-        <a href="http://www.comigo.com/wp-content/uploads/2016/04/Comigo-terms-of-use.pdf" target="_blank">Terms of Use</a>
+        <a href="http://www.comigo.com/wp-content/uploads/2016/04/Comigo-terms-of-use.pdf" target="_blank">Terms of
+          Use</a>
         <a href="http://www.comigo.com/contact-us/" target="_blank">Contact Us</a>
-        <a href="http://www.comigo.com/wp-content/uploads/2016/04/Comigo-Privacy-Policy.pdf" target="_blank">Privacy Policy</a>
-        Developed by: <address><a href="http://www.fatlady.co.il" target="_blank">fatlady</a></address>
+        <a href="http://www.comigo.com/wp-content/uploads/2016/04/Comigo-Privacy-Policy.pdf" target="_blank">Privacy
+          Policy</a>
+        Developed by:
+        <address><a href="http://www.fatlady.co.il" target="_blank">fatlady</a></address>
         <ul>
           <li><a href="https://www.facebook.com/Comigo-278941765529151" target="_blank"></a></li>
           <li><a href="https://twitter.com/Comigo_Ltd" target="_blank"></a></li>

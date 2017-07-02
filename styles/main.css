@@ -1,0 +1,125 @@
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
+
+/************************************* general body ********************************************/
+
+body {
+  color: #3d3d3d;
+  font-family: ProximaNova,Texta,Tahoma,sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.texta {
+  font-family:Texta,ProximaNova,Tahoma,sans-serif!important;
+  font-weight: 300;
+}
+
+/************************************** header section *****************************************/
+
+header h1 {
+  text-indent: -9999em;
+  margin: 0;
+  height: 10px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li.selected a {
+  font-weight: 700;
+  color: #f14848;
+}
+
+header nav ul li a, a:visited {
+  font-weight: 300;
+  color: inherit;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+  color: #f14848;
+}
+
+header nav ul li ul li a, a:visited {
+  background-color: rgba(255,255,255,.98);
+}
+
+header nav ul li ul li a:hover, header nav ul li ul li a:focus {
+  background-color: #f14848;
+  color: white;
+}
+
+/***************************************** main section ****************************************/
+
+.red_btn, .red_btn:visited {
+  background-color: #f14848;
+  color: white;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 10px;
+  padding: 10px 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+}
+
+.red_btn:hover, .red_btn:focus {
+  box-shadow: 0 12px 32px rgba(0,0,0,.15);
+  transform: translateY(-3px);
+}
+
+.white_btn, .white_btn:visited {
+  background-color: white;
+  color: #f14848;
+}
+
+#learn_more_download, #learn_more_download:visited {
+  background-color: #f14848;
+  color: white;
+  font-size: 16px;
+}
+
+#learn h3 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+/******************************************* footer section ***********************************/
+
+#footer_main {
+  background-color: #1e2024;
+}
+
+#footer_secondary {
+  background-color: #151515;
+  font-size: 12px;
+}
+
+footer ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+footer ul li {
+  color: white;
+  font-size: 12px;
+}
+
+footer ul li ul li {
+  color: #7a7a7a;
+}
+
+footer ul li ul li:hover, footer ul li ul li:focus {
+  color: #f14848;
+}
+
+#footer_secondary a:hover, #footer_secondary a:focus {
+  color: white;
+}
