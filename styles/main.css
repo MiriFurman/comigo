@@ -21,46 +21,55 @@ a {
   font-weight: 300;
 }
 
+.fs16 {
+  font-size: 16px;
+}
+
 /************************************** header section *****************************************/
 
-header h1 {
+.top_header h1 {
   text-indent: -9999em;
   margin: 0;
   height: 10px;
 }
 
-header nav ul li {
+.top_nav ul li {
   display: inline-block;
 }
 
-header nav ul li.selected a {
+.top_nav > ul > li.selected > a {
   font-weight: 700;
   color: #f14848;
 }
 
-header nav ul li a, a:visited {
+.top_nav > ul > li > a,
+.top_nav > ul > li > a:visited {
   font-weight: 300;
   color: inherit;
 }
 
-header nav ul li a:hover, header nav ul li a:focus {
+.top_nav > ul > li > a:hover,
+.top_nav > ul > li > a:focus {
   color: #f14848;
+  outline: 0;
 }
 
-header nav ul li ul li a, a:visited {
+.top_nav ul ul a,
+.top_nav ul ul a:visited {
   background-color: rgba(255,255,255,.98);
 }
 
-header nav ul li ul li a:hover, header nav ul li ul li a:focus {
+.top_nav ul ul a:hover,
+.top_nav ul ul a:focus {
   background-color: #f14848;
   color: white;
+  outline: 0;
 }
 
 /***************************************** main section ****************************************/
 
-.red_btn, .red_btn:visited {
-  background-color: #f14848;
-  color: white;
+.round_btn,
+.round_btn:visited {
   display: inline-block;
   border-radius: 25px;
   font-size: 10px;
@@ -70,34 +79,36 @@ header nav ul li ul li a:hover, header nav ul li ul li a:focus {
   transition: all 150ms ease-in-out;
 }
 
-.red_btn:hover, .red_btn:focus {
+.round_btn:hover,
+.round_btn:focus {
   box-shadow: 0 12px 32px rgba(0,0,0,.15);
   transform: translateY(-3px);
 }
 
-.white_btn, .white_btn:visited {
+.red_bg_white_txt,
+.red_bg_white_txt:visited {
+  background-color: #f14848;
+  color: white;
+}
+
+.white_bg_red_txt,
+.white_bg_red_txt:visited {
   background-color: white;
   color: #f14848;
 }
 
-#learn_more_download, #learn_more_download:visited {
-  background-color: #f14848;
-  color: white;
-  font-size: 16px;
-}
-
-#learn h3 {
+.learn h3 {
   font-size: 48px;
   text-transform: uppercase;
 }
 
 /******************************************* footer section ***********************************/
 
-#footer_main {
+.footer_main {
   background-color: #1e2024;
 }
 
-#footer_secondary {
+.footer_secondary {
   background-color: #151515;
   font-size: 12px;
 }
@@ -107,19 +118,33 @@ footer ul {
   text-transform: uppercase;
 }
 
-footer ul li {
+.footer_main > ul > li > a {
   color: white;
   font-size: 12px;
 }
 
-footer ul li ul li {
+.footer_main > ul > li > a:hover,
+.footer_main > ul > li > a:focus {
+  outline: 0;
+}
+
+.footer_main ul ul li a {
   color: #7a7a7a;
+  font-size: 11px;
 }
 
-footer ul li ul li:hover, footer ul li ul li:focus {
+.footer_main ul ul a:hover,
+.footer_main ul ul a:focus {
   color: #f14848;
+  outline: 0;
 }
 
-#footer_secondary a:hover, #footer_secondary a:focus {
+.footer_secondary a:hover,
+.footer_secondary a:focus {
   color: white;
+  outline: 0;
+}
+
+address {
+  text-transform: uppercase;
 }
