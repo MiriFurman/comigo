@@ -8,7 +8,8 @@
 
 body {
   color: #3d3d3d;
-  font-family: ProximaNova,Texta,Tahoma,sans-serif;
+  font-family: Source Sans Pro,sans-serif;
+  margin: 0;
 }
 
 a {
@@ -16,16 +17,16 @@ a {
   color: inherit;
 }
 
-.texta {
-  font-family:Texta,ProximaNova,Tahoma,sans-serif!important;
-  font-weight: 300;
-}
-
-.fs16 {
-  font-size: 16px;
+.reset_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /************************************** header section *****************************************/
+.top_header {
+  padding-bottom: 15px;
+}
 
 .top_header h1 {
   text-indent: -9999em;
@@ -33,8 +34,13 @@ a {
   height: 10px;
 }
 
+.top_nav {
+  float: right;
+}
+
 .top_nav ul li {
   display: inline-block;
+  padding: 15px 30px 15px 0;
 }
 
 .top_nav > ul > li.selected > a {
@@ -54,9 +60,39 @@ a {
   outline: 0;
 }
 
+/*.box-3 {*/
+  /*width: 33%;*/
+  /*height: 150px;*/
+/*}*/
+
+/*.box-2 {*/
+  /*width: 50%;*/
+  /*height: 150px;*/
+/*}*/
+
+.top_nav ul > li > ul > li {
+  width: 500px;
+  height: 150px;
+  padding: 0;
+}
+
+.top_nav ul > li > ul > li > ul > li {
+  width: 750px;
+  height: 150px;
+  padding: 0;
+}
+
+.top_nav ul ul,
+.top_nav ul ul:visited {
+  display: none;
+}
+
 .top_nav ul ul a,
 .top_nav ul ul a:visited {
   background-color: rgba(255,255,255,.98);
+  display:inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .top_nav ul ul a:hover,
@@ -66,14 +102,23 @@ a {
   outline: 0;
 }
 
+.main_logo{
+  padding: 10px 0 0 30px;
+}
+
+.main_heading h1 {
+  padding-top: 150px;
+}
+
 /***************************************** main section ****************************************/
 
 .round_btn,
 .round_btn:visited {
   display: inline-block;
-  border-radius: 25px;
-  font-size: 10px;
-  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 20px 30px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
@@ -85,21 +130,137 @@ a {
   transform: translateY(-3px);
 }
 
-.red_bg_white_txt,
-.red_bg_white_txt:visited {
+.red_btn,
+.red_btn:visited {
   background-color: #f14848;
   color: white;
 }
 
-.white_bg_red_txt,
-.white_bg_red_txt:visited {
+.white_btn,
+.white_btn:visited {
   background-color: white;
   color: #f14848;
 }
 
+.main_bg {
+  display: block;
+  width: 100%;
+  height: 650px;
+  background:
+    url("../assets/main-bg/home-featured-shine8.png"),
+    url("../assets/main-bg/home-featured-shine7.png"),
+    url("../assets/main-bg/home-featured-shine6.png"),
+    url("../assets/main-bg/home-featured-shine5.png"),
+    url("../assets/main-bg/home-featured-shine4.png"),
+    url("../assets/main-bg/home-featured-shine3.png"),
+    url("../assets/main-bg/home-featured-shine1.png"),
+    url("../assets/main-bg/home-brain-image-new-1920x816.png"),
+    url("../assets/main-bg/home-featured-bg.png") no-repeat;
+  background-size: cover;
+
+}
+
+.main_heading {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_heading h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+
 .learn h3 {
-  font-size: 48px;
+font-size: 48px;
+text-transform: uppercase;
+}
+
+.why_sec {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 70px;
+}
+
+.why_sec .block-center {
+  width: 360px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.why_sec h2 {
+  font-size: 50px;
+  font-weight: 300;
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.why_sec p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.services h3 {
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.services > div {
+  display: block;
+  width: 50%;
+  height: 700px;
+}
+
+.services p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.enhance_sec {
+  float: left;
+  color: white;
+  background:
+    url("../assets/other/ic-ei-cloud-brain-hp.png") no-repeat top 45px center,
+    url("../assets/other/home-tv-service-bg1.png") no-repeat;
+  background-size: 50%, cover;
+}
+
+.enhance_sec_content {
+  width: 360px;
+  margin: 0 auto;
+  padding-top: 400px;
+}
+
+.deploy_sec {
+  float: right;
+  background:
+    url("../assets/other/ic-stb-screens.png") no-repeat top 30px left 40px,
+    url("../assets/other/home-tv-service-bg2.png") no-repeat;
+  background-size: 40%, cover;
+}
+
+.deploy_sec > div {
+  width: 80%;
+  padding: 400px 0 0 50px;
+}
+
+.blogs li {
+  width: 16.66%;
+  height: 200px;
+}
+
+.blogs a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /******************************************* footer section ***********************************/
@@ -110,6 +271,7 @@ a {
 
 .footer_secondary {
   background-color: #151515;
+  color: #636363;
   font-size: 12px;
 }
 

@@ -5,16 +5,17 @@
     <title>comigo</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="assets/other/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro">
   </head>
   <body>
     <!------------------------------------ header section ---------------------------------------->
     <header class="top_header">
-      <h1>comigo</h1> <!--TODO - hide with css-->
+      <h1>comigo</h1>
       <a href="index.html">
-        <img src="assets/logo/comigo-logo-black.png" alt="site logo">
+        <img src="assets/logo/comigo-logo-black.png" alt="site logo" class="main_logo">
       </a>
       <nav class="top_nav">
-        <ul>
+        <ul class="reset_list">
           <li class="selected">
             <a href="#">Home</a>
           </li>
@@ -23,7 +24,7 @@
             <ul>
               <li>
                 <a href="http://www.comigo.com/our-solutions/ei-cloud/">EI Cloud</a>
-                <ul>
+                <ul class="">
                   <li>
                     <a href="http://www.comigo.com/our-solutions/ei-cloud/eix">EIˣ</a>
                   </li>
@@ -34,7 +35,7 @@
               </li>
               <li>
                 <a href="http://www.comigo.com/our-solutions/ei-middleware/">EI Middleware</a>
-                <ul>
+                <ul class="">
                   <li>
                     <a href="http://www.comigo.com/our-solutions/ei-middleware/android/">Android</a>
                   </li>
@@ -54,7 +55,7 @@
           </li>
           <li>
             <a href="#">Industry Insights</a>
-            <ul>
+            <ul class="">
               <li>
                 <a href="http://www.comigo.com/media-room/">Media Room</a>
               </li>
@@ -78,17 +79,21 @@
     <!---------------------------------------- main section -------------------------------------------->
     <main>
       <!-------------------------------------- first section ------------------------------------------->
-      <section>
-        <h1>Make your OTT shine with the Experience Intelligence Cloud</h1>
-        <a href="#window-form" class="round_btn red_bg_white_txt">schedule a demo</a>
+      <section class="main_bg">
+        <div class="main_heading">
+          <h1>Make your OTT shine with the Experience Intelligence Cloud</h1>
+          <a href="#window-form" class="round_btn red_btn">schedule a demo</a>
+        </div>
       </section>
       <!-------------------------------------- why comigo ---------------------------------------------->
-      <section>
-        <h2>Why Comigo?</h2>
-        <p>
-          Creating a TV that understands, with automatic metadata enrichment and Artificial Intelligence (AI)
-        </p>
-        <a href="http://www.comigo.com/our-solutions/ei-cloud/" class="round_btn red_bg_white_txt">Learn More</a>
+      <section class="why_sec">
+        <div class="block-center">
+            <h2>Why Comigo?</h2>
+            <p>
+              Creating a TV that understands, with automatic metadata enrichment and Artificial Intelligence (AI)
+            </p>
+            <a href="http://www.comigo.com/our-solutions/ei-cloud/" class="round_btn red_btn">Learn More</a>
+          </div>
       </section>
       <!---------------------------------------- contextual services ------------------------------------>
       <section>
@@ -98,7 +103,7 @@
         <p>
           with highly-relevant contextual services
         </p>
-        <ul>
+        <ul class="reset_list">
           <li>
             <h4>Pedia</h4>
             <figure>
@@ -156,16 +161,20 @@
         </ul>
       </section>
       <!------------------------------------------ services/solutions --------------------------------------->
-      <section>
-        <div>
-          <h3>Enhance any tv service</h3>
-          <p>Comigo Experience Intelligence (EI)</p>
-          <a href="http://www.comigo.com/our-solutions" class="round_btn red_bg_white_txt">Enhance your OTT TV</a>
+      <section class="services">
+        <div class="enhance_sec">
+          <div class="enhance_sec_content">
+            <h3>Enhance any tv service</h3>
+            <p>Comigo Experience Intelligence (EI)</p>
+            <a href="http://www.comigo.com/our-solutions" class="round_btn white_btn">Enhance your OTT TV</a>
+          </div>
         </div>
-        <div>
-          <h3>Deploy best in class tv service</h3>
-          <P>Comigo's Android-based STB (HW&MW)</P>
-          <a href="http://www.comigo.com/our-solutions/ei-middleware/" class="round_btn white_bg_red_txt">Deploy on Android</a>
+        <div class="deploy_sec">
+          <div>
+            <h3>Deploy best in class tv service</h3>
+            <P>Comigo's Android-based STB (HW&MW)</P>
+            <a href="http://www.comigo.com/our-solutions/ei-middleware/" class="round_btn red_btn">Deploy on Android</a>
+          </div>
         </div>
       </section>
       <!------------------------------------------- whos on ------------------------------------------------->
@@ -174,17 +183,17 @@
         <p>
           Intelligence-based contextual WatchApp Applications
         </p>
-        <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/" class="round_btn red_bg_white_txt">Learn More</a>
+        <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/" class="round_btn red_btn">Learn More</a>
         <img src="assets/other/screen_whos_on.jpg" alt="whos_on">
       </section>
       <!-------------------------------------------- learn more --------------------------------------------->
       <section class="learn">
-        <h3 class="texta">Learn more about Comigo</h3>
-        <a href="assets/other/lnr-download.svg" download="download.svg" class="red_bg_white_txt fs16">
+        <h3>Learn more about Comigo</h3>
+        <a href="assets/other/lnr-download.svg" download="download.svg" class="red_btn">
           Download the Whitepaper to learn more
         </a>
         <a href="#window-form">
-          <h3 class="texta">Schedule a Demo</h3>
+          <h3>Schedule a Demo</h3>
           <img src="assets/other/screen_demo.jpg" alt="demo">
         </a>
         <a href="https://www.facebook.com/Comigo-278941765529151" target="_blank"
@@ -199,14 +208,14 @@
         </a>
       </section>
       <!---------------------------------------------- blog ------------------------------------------------->
-      <aside>
+      <aside class="blogs">
         <header>
           <h3>Our Blog</h3>
           <p>
             The Inside View
           </p>
         </header>
-        <ul>
+        <ul class="reset_list">
           <li>
             <a href="http://www.comigo.com/blog/comigos-experience-intelligence-products-redefine-tv/">
               <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at IBC2016</p>
