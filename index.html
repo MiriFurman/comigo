@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>comigo</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="assets/other/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
   </head>
   <body>
     <!------------------------------------ header section ---------------------------------------->
@@ -15,37 +16,37 @@
         <img src="assets/logo/comigo-logo-black.png" alt="site logo" class="main_logo">
       </a>
       <nav class="top_nav">
-        <ul class="reset_list">
+        <ul>
           <li class="selected">
             <a href="#">Home</a>
           </li>
           <li>
             <a href="http://www.comigo.com/our-solutions/">Our solutions</a>
             <ul>
-              <li>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/our-solutions/ei-cloud/">EI Cloud</a>
-                <ul class="">
-                  <li>
+                <ul>
+                  <li class="sub_sub_menu_item">
                     <a href="http://www.comigo.com/our-solutions/ei-cloud/eix">EIˣ</a>
                   </li>
-                  <li>
+                  <li class="sub_sub_menu_item">
                     <a href="http://www.comigo.com/our-solutions/ei-cloud/ei-mind/">EI Mind</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/our-solutions/ei-middleware/">EI Middleware</a>
-                <ul class="">
-                  <li>
+                <ul>
+                  <li class="sub_sub_menu_item">
                     <a href="http://www.comigo.com/our-solutions/ei-middleware/android/">Android</a>
                   </li>
-                  <li>
+                  <li class="sub_sub_menu_item">
                     <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/">Comigo WhatchApp™
                       Applications</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/our-solutions/android-stb/">Android STB</a>
               </li>
             </ul>
@@ -55,14 +56,14 @@
           </li>
           <li>
             <a href="#">Industry Insights</a>
-            <ul class="">
-              <li>
+            <ul>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/media-room/">Media Room</a>
               </li>
-              <li>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/blog/">Blog</a>
               </li>
-              <li>
+              <li class="sub_menu_item">
                 <a href="http://www.comigo.com/industry-events/">Industry Events</a>
               </li>
             </ul>
@@ -82,18 +83,18 @@
       <section class="main_bg">
         <div class="main_heading">
           <h1>Make your OTT shine with the Experience Intelligence Cloud</h1>
-          <a href="#window-form" class="round_btn red_btn">schedule a demo</a>
+          <a href="#window-form" class="round_btn main_btn">schedule a demo</a>
         </div>
       </section>
       <!-------------------------------------- why comigo ---------------------------------------------->
-      <section class="why_sec">
-        <div class="block-center">
-            <h2>Why Comigo?</h2>
-            <p>
-              Creating a TV that understands, with automatic metadata enrichment and Artificial Intelligence (AI)
-            </p>
-            <a href="http://www.comigo.com/our-solutions/ei-cloud/" class="round_btn red_btn">Learn More</a>
-          </div>
+      <section class="why_section">
+        <div class="block_center">
+          <h2 class="secondary_heading">Why Comigo?</h2>
+          <p>
+            Creating a TV that understands, with automatic metadata enrichment and Artificial Intelligence (AI)
+          </p>
+          <a href="http://www.comigo.com/our-solutions/ei-cloud/" class="round_btn main_btn">Learn More</a>
+        </div>
       </section>
       <!---------------------------------------- contextual services ------------------------------------>
       <section>
@@ -103,7 +104,7 @@
         <p>
           with highly-relevant contextual services
         </p>
-        <ul class="reset_list">
+        <ul>
           <li>
             <h4>Pedia</h4>
             <figure>
@@ -162,34 +163,38 @@
       </section>
       <!------------------------------------------ services/solutions --------------------------------------->
       <section class="services">
-        <div class="enhance_sec">
+        <div class="enhance_sec services_column">
           <div class="enhance_sec_content">
-            <h3>Enhance any tv service</h3>
+            <h3 class="secondary_heading">Enhance any tv service</h3>
             <p>Comigo Experience Intelligence (EI)</p>
-            <a href="http://www.comigo.com/our-solutions" class="round_btn white_btn">Enhance your OTT TV</a>
+            <a href="http://www.comigo.com/our-solutions" class="round_btn secondary_btn">Enhance your OTT TV</a>
           </div>
         </div>
-        <div class="deploy_sec">
-          <div>
-            <h3>Deploy best in class tv service</h3>
+        <div class="deploy_sec services_column">
+          <div class="deploy_sec_content">
+            <h3 class="secondary_heading">Deploy best in class tv service</h3>
             <P>Comigo's Android-based STB (HW&MW)</P>
-            <a href="http://www.comigo.com/our-solutions/ei-middleware/" class="round_btn red_btn">Deploy on Android</a>
+            <a href="http://www.comigo.com/our-solutions/ei-middleware/" class="round_btn main_btn">Deploy on Android</a>
           </div>
         </div>
       </section>
       <!------------------------------------------- whos on ------------------------------------------------->
-      <section>
-        <h3>Your Content, Comigo's Unique Experience</h3>
-        <p>
-          Intelligence-based contextual WatchApp Applications
-        </p>
-        <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/" class="round_btn red_btn">Learn More</a>
+      <section class="whos_on_sec">
+        <div class="whos_on_content_outer">
+          <div class="whos_on_content_inner">
+            <h3 class="secondary_heading">Your Content, Comigo's Unique Experience</h3>
+            <p>
+              Intelligence-based contextual WatchApp Applications
+            </p>
+            <a href="http://www.comigo.com/our-solutions/our-whatchapp-solution/" class="round_btn main_btn">Learn More</a>
+          </div>
+        </div>
         <img src="assets/other/screen_whos_on.jpg" alt="whos_on">
       </section>
       <!-------------------------------------------- learn more --------------------------------------------->
       <section class="learn">
         <h3>Learn more about Comigo</h3>
-        <a href="assets/other/lnr-download.svg" download="download.svg" class="red_btn">
+        <a href="assets/other/lnr-download.svg" download="download.svg" class="main_btn">
           Download the Whitepaper to learn more
         </a>
         <a href="#window-form">
@@ -209,43 +214,42 @@
       </section>
       <!---------------------------------------------- blog ------------------------------------------------->
       <aside class="blogs">
-        <header>
-          <h3>Our Blog</h3>
-          <p>
-            The Inside View
-          </p>
-        </header>
-        <ul class="reset_list">
-          <li>
-            <a href="http://www.comigo.com/blog/comigos-experience-intelligence-products-redefine-tv/">
-              <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at IBC2016</p>
-              <div>Read More</div>
-            </a>
+        <ul>
+          <li class="blog_post blog_intro">
+              <h3 class="secondary_heading">Our Blog</h3>
+              <p>
+                The Inside View
+              </p>
           </li>
-          <li>
-            <a href="http://www.comigo.com/blog/what-we-learned-at-tv-connect-2016/">
-              <p>What We Learned at TV Connect 2016</p>
-              <div>Read More</div>
-            </a>
+          <li class="blog_post">
+              <a href="http://www.comigo.com/blog/comigos-experience-intelligence-products-redefine-tv/">
+                <p>Comigo’s Experience Intelligence Products Redefine TV – And You Can Find Out How at IBC2016</p>
+                <div class="show_on_hover">Read More</div>
+              </a>
           </li>
-          <li>
-            <a
-              href="http://www.comigo.com/blog/big-data-meets-tv-the-next-phase-in-the-evolution-of-the-tv-experience/">
-              <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV Connect 2016</p>
-              <div>Read More</div>
-            </a>
+          <li class="blog_post">
+              <a href="http://www.comigo.com/blog/what-we-learned-at-tv-connect-2016/">
+                <p>What We Learned at TV Connect 2016</p>
+                <div class="show_on_hover">Read More</div>
+              </a>
           </li>
-          <li>
-            <a href="http://www.comigo.com/blog/quality-stbs-crappy-cars-and-caveat-emptor/">
-              <p>Quality, Set-Top-Boxes, Crappy Cars, and Caveat Emptor</p>
-              <div>Read More</div>
-            </a>
+          <li class="blog_post">
+              <a href="http://www.comigo.com/blog/big-data-meets-tv-the-next-phase-in-the-evolution-of-the-tv-experience/">
+                <p>Comigo Will Bring an Infusion of Internet Power and Contextual TV to Life at TV Connect 2016</p>
+                <div class="show_on_hover">Read More</div>
+              </a>
           </li>
-          <li>
-            <a href="http://www.comigo.com/blog/how-pay-tv-operators-can-put-an-end-to-subscriber-churn/">
-              <p>How Pay-TV Operators Can Put an End to Subscriber Churn</p>
-              <div>Read More</div>
-            </a>
+          <li class="blog_post">
+              <a href="http://www.comigo.com/blog/quality-stbs-crappy-cars-and-caveat-emptor/">
+                <p>Quality, Set-Top-Boxes, Crappy Cars, and Caveat Emptor</p>
+                <div class="show_on_hover">Read More</div>
+              </a>
+          </li>
+          <li class="blog_post">
+              <a href="http://www.comigo.com/blog/how-pay-tv-operators-can-put-an-end-to-subscriber-churn/">
+                <p>How Pay-TV Operators Can Put an End to Subscriber Churn</p>
+                <div class="show_on_hover">Read More</div>
+              </a>
           </li>
         </ul>
       </aside>
