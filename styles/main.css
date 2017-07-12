@@ -98,7 +98,7 @@ p {
 
 .main_logo {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 30px;
 }
 
@@ -106,9 +106,12 @@ p {
   float: right;
 }
 
+.top_nav ul{
+  display: flex;
+  line-height: 55px;
+}
+
 .menu_item {
-  display: inline-block;
-  padding: 15px 30px 15px 0;
   height: 66px;
 }
 
@@ -121,6 +124,7 @@ p {
 .menu_item > a:visited {
   font-size: 1.125rem;
   color: inherit;
+  padding: 0 20px;
 }
 
 .menu_item:hover,
@@ -128,48 +132,24 @@ p {
   color: #f14848;
 }
 
-.menu_item:hover .sub_menu_item,
-.menu_item:focus .sub_menu_item {
+.sub_menu_row {
   display: inline-block;
+  position: fixed;
+  left:0;
+  right:0;
 }
 
 .sub_menu {
-  display: inline-block;
-  position: fixed;
   top: 66px;
-  left:0;
-  right:0;
-}
-
-.sub_menu_item {
-  display: none;
-  float:left;
-  width: 33.3333333%;
-  height: 200px;
-  font-weight: 300;
-  font-size: 3rem;
-  color: #3d3d3d;
-  text-align: center;
-  line-height: 200px;
-}
-
-.sub_menu_item:hover .sub_sub_menu_item,
-.sub_menu_item:focus .sub_sub_menu_item {
-  display: inline-block;
 }
 
 .sub_sub_menu {
-  display: inline-block;
-  position: fixed;
   top: 266px;
-  left:0;
-  right:0;
 }
 
-.sub_sub_menu_item {
+.sub_menu_box {
   display: none;
   float:left;
-  width: 50%;
   height: 200px;
   font-weight: 300;
   font-size: 3rem;
@@ -178,29 +158,42 @@ p {
   line-height: 200px;
 }
 
-.sub_menu_item a span,
-.sub_sub_menu_item a span {
+.sub_menu_box a,
+.sub_menu_box a:visited {
+  background-color: rgba(255,255,255,.98);
+  display:block;
+  height: 100%;
+}
+
+.sub_menu_box a:hover,
+.sub_menu_box a:focus {
+  background-color: #f14848;
+  color: white;
+}
+
+.sub_menu_box a span {
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
   width: 60%;
 }
 
-.sub_menu_item a,
-.sub_menu_item a:visited,
-.sub_sub_menu_item a,
-.sub_sub_menu_item a:visited {
-  background-color: rgba(255,255,255,.98);
-  display:block;
-  height: 100%;
+.sub_menu_item {
+  width: 33.3333333%;
 }
 
-.sub_menu_item a:hover,
-.sub_menu_item a:focus,
-.sub_sub_menu_item a:hover,
-.sub_sub_menu_item a:focus {
-  background-color: #f14848;
-  color: white;
+.sub_sub_menu_item {
+  width: 50%;
+}
+
+.menu_item:hover .sub_menu_item,
+.menu_item:focus .sub_menu_item {
+  display: inline-block;
+}
+
+.sub_menu_item:hover .sub_sub_menu_item,
+.sub_menu_item:focus .sub_sub_menu_item {
+  display: inline-block;
 }
 
 /***************************************** main section ****************************************/
@@ -362,10 +355,8 @@ p {
 }
 
 .enhance_sec_content {
-  /*width: 360px;*/
   width: 20em;
   margin: 0 auto;
-  /*padding-top: 400px;*/
   padding-top: 47%;
 }
 
@@ -408,6 +399,100 @@ p {
 
 .whos_on_content_inner h3 {
   font-size: 60px;
+}
+
+.learn {
+  width: 100%;
+  height: 41.9994048vw;
+}
+
+.learn_heading {
+  width: 40%;
+  height: 50%;
+  float: left;
+  background-color: #f9f9f9;
+}
+
+.learn_heading h3 {
+  font-size: 5rem;
+  margin: 0;
+  padding: 20% 0 0 10%;
+}
+
+.learn_download {
+  width: 20%;
+  height: 50%;
+  float: left;
+  background-color: #f14848;
+  position: relative;
+}
+
+.learn_download a {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.learn_download a svg {
+  fill: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.learn_download_text {
+  font-size: 1.750rem;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+}
+
+.learn_demo {
+  width: 40%;
+  height: 100%;
+  float: right;
+  background-color: #efefef;
+  position: relative;
+  overflow: hidden;
+}
+
+.learn_demo_inner {
+  position: absolute;
+  width: 70%;
+  top: 1.25rem;
+  left: 2.5rem;
+}
+
+.learn_demo_inner h3 {
+  font-size: 5rem;
+  margin-bottom: 5%;
+}
+
+.learn_demo_inner img {
+  width: 37.7vw;
+}
+
+.learn_social {
+  width: 20%;
+  height: 50%;
+  float: left;
+  background-color: #efefef;
+}
+
+.learn_meeting {
+  width: 40%;
+  height: 50%;
+  float: left;
+}
+
+.learn_meeting a {
+  width: 100%;
+  height: 100%;
+}
+
+.learn_meeting img {
+  width: 100%;
+  height: 100%;
 }
 
 .blogs ul {
